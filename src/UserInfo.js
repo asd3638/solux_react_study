@@ -1,8 +1,8 @@
-import './App.css'
 
 function UserInfo(props) {
   return (
     <div className="UserInfo">
+      <h1>UserInfo</h1>
       <img className="Avatar"
         src={props.user.avatarUrl}
         alt={props.user.name}
@@ -21,9 +21,6 @@ function Comment(props) {
   return (
     <div className="Comment">
       <UserInfo user={props.author}></UserInfo>
-      <div className="Comment-text">
-        {props.text}
-      </div>
       <div className="Comment-date">
         {formatDate(props.date)}
       </div>
